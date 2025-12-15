@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Times New Roman', Times, serif;
+            background: #ebf4dd;
+
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .image {
+            width: 300px;
+            background: #1b211a;
+            color: #fff;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            align-items: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 350px);
+            gap: 20px;
+            background-color: #ebf4dd;
+            padding: 20px;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        .grid-item {
+            background-color: #3b4953;
+            border-radius: 10px;
+            color: white;
+            padding: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        /* Large tablets and small laptops */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 320px);
+        gap: 20px;
+    }
+
+    .image {
+        width: 280px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 26px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 300px);
+        padding: 15px;
+    }
+
+    .grid-item {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .image {
+        width: 260px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 22px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .grid-item {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <h2>MoodSpace</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="image">
+                <img src="traditional.jpg" alt="profile" />
+            </div>
+            <div class="image-info">
+                <h3>Traditional</h3>
+                <p>Creating a warm, timeless,and elegant space rooted in history.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="image">
+                <img src="asian.jpg" alt="profile" />
+            </div>
+            <div class="image-info">
+                <h3>Asian</h3>
+                <p>creating a peaceful, balanced space using natural materials, clean lines, and cultural motifs.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="image">
+                <img src="transitional.png" alt="profile" />
+            </div>
+            <div class="image-info">
+                <h3>Transitional</h3>
+                <p>Creating a warm, timeless,and elegant space rooted in history.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="image">
+                <img src="Eclectic.jpg" alt="profile" />
+            </div>
+            <div class="image-info">
+                <h3>Eclectic</h3>
+                <p>Blends diverse styles, eras, and textures into a cohesive, curated space.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="image">
+                <img src="english-country.jpg" alt="profile" />
+            </div>
+            <div class="image-info">
+                <h3>English Country Side</h3>
+                <p>Design blends natural materials, floral patterns, and antiques to create a cozy, elegant atmosphere.
+                </p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="image">
+                <img src="baroque.jpg" alt="profile" />
+            </div>
+            <div class="image-info">
+                <h3>Baroque</h3>
+                <p>a dramatic, opulent, and highly ornamental style from 17th-century Europe.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="image">
+                <img src="artdeco.jpg" alt="profile" />
+            </div>
+            <div class="image-info">
+                <h3>Art Deco</h3>
+                <p>Design is a glamorous style defined by bold geometric shapes, rich materials, symmetry, and opulence.
+                </p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="image">
+                <img src="bauhaus.jpg" alt="profile" />
+            </div>
+            <div class="image-info">
+                <h3>Bauhaus</h3>
+                <p>A style focused on functionality, simplicity, and minimalism.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="image">
+                <img src="desert.jpg" alt="profile" />
+            </div>
+            <div class="image-info">
+                <h3>Desert</h3>
+                <p>creating warm, natural, and serene spaces inspired by arid landscapes.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
